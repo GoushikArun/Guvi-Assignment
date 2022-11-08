@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href=css/register.css>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="">
+            <h1>Register</h1>
+            <div class="form-personal-details">
+                <h3><label for="">Personal details</label></h3><br>
+                <label for="">First name</label>
+                <input type="text" class="form-control" placeholder="Your name" id="fname" name="fname" pattern="[a-zA-z ]{1,}" required>           
+                <label for="">Last name</label>
+                <input type="text" class="form-control" placeholder="Your last name" id="lname" name="lname" pattern="[a-zA-z ]{1,}" required>            
+                <label for="">Gender</label><br>
+                <div class = "form-gender">
+                <input type="radio" name="gender" value="Male" id="gender"  checked required>Male <br>
+                <input type="radio" name="gender" value="Female" id="gender"  required>Female <br>
+                <input type="radio" name="gender" value="Other" id="gender"  required>Others <br>
+                </div>            
+                <label for="">DOB</label>
+                <input type="date" class="form-control" id="dob" name="dob" required>            
+                <label for="">Phone</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+91 10digits" pattern="[+91]{3}[ ]{0,1}[6-9]{1}[0-9]{9}" required>  
+            </div>
+
+            <div class="form-address-details">
+                <h3><label for="">Address details</label></h3><br>
+                <label for="">Address type</label>                
+                <select class="form-control" id="typeadres" name="typeadres" required>
+                    <option value="Permanent">Permanent</option>
+                    <option value="Temporary">Temporary</option>                    
+                </select>
+                <label for="">Door no</label>
+                <input type="text" class="form-control" id="dno" name="dno" placeholder="Door no" pattern="[0-9]{1,4}" required>
+                <label for="">Street</label>
+                <input type="text" class="form-control" id="street" name="street" placeholder="Street" pattern="[a-zA-z ]{1,}"  required>
+                <label for="">City</label>
+                <input type="text" class="form-control" id="city" name="city" placeholder="City" pattern="[a-zA-z ]{1,}" required>
+                <label for="">District</label>
+                <input type="text" class="form-control" id="dist" name="dist" placeholder="District" pattern="[a-zA-z ]{1,}" required>
+                <label for="">State</label>
+                <input type="text" class="form-control" id="sta" name="sta" placeholder="State" pattern="[a-zA-z ]{1,}" required>
+                <label for="">Pincode</label>
+                <input type="text" class="form-control" id="pin" name="pin" placeholder="Pincode" pattern="[0-9]{6}" required>
+                <label for="">Nationality</label>                
+                <select class="form-control" id="nation" name="nation" required>
+                    <option value="Indian">Indian</option>
+                    <option value="Others">Others</option>                    
+                  </select>
+            </div>
+            
+            <div class="form-login-details">
+                <h3><label for="">Login details</label></h3><br>
+                <label for="">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="abc@gmail.com"  required>            
+                <label for="">Password</label>
+                <input type="password" class="form-control" id="pass" name="pass" placeholder="min 6 character" pattern="[0-9a-zA-Z@. ]{6,15}" required>            
+                <label for="">Re-type Password</label>
+                <input type="password" class="form-control" id="repass" name="repass" placeholder="Repeat password" pattern="[0-9a-zA-Z@. ]{6,15}" required>
+            </div>            
+
+            <input type="submit" class="btn" value="Submit">
+            
+            <div class = "form-cancel">               
+                <span class="psw"><a href="login.html">Cancel</a></span>
+            </div>
+              
+        </form>
+    </div>
+
+</body>
+</html>
